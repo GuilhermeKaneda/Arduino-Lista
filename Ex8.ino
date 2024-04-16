@@ -7,6 +7,6 @@ void setup() {
 
 void loop() {
 	celsius = map(((analogRead(A0) - 20) * 3.04), 0, 1023, -40, 125);
-    Serial.print(celsius);
+    Serial.println(celsius);
     delay(1000);
 }

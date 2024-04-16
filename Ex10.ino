@@ -12,6 +12,7 @@ void setup()
 void loop()
 {
     celsius = map(((analogRead(A0) - 20) * 3.04), 0, 1023, -40, 125);
+    Serial.println(celsius);
 
     if (celsius >= range)
     {

@@ -11,6 +11,6 @@ void setup() {
 void loop() {
 	val = analogRead(luz);
     val = map(val, 0, 679, 0, 255);
-
+    Serial.println(val);
     analogWrite(LED, val);
 }
